@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import InteractiveBackground from './components/InteractiveBackground'
 import { SectionWrapper, HallOfFame, Certificates, Education, Recommendations, sectionMeta } from './components/Sections'
 
 const demoData = {
@@ -23,8 +24,8 @@ const demoData = {
 
 function Footer() {
   return (
-    <footer id="contact" className="py-10 border-t border-gray-200 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 text-sm text-gray-600 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <footer id="contact" className="py-10 border-t border-white/10 bg-black/60 backdrop-blur">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 text-sm text-gray-300 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p>© {new Date().getFullYear()} Your Name — Cyber Security Portfolio</p>
         <p>Available for security research, bug bounty, and consulting.</p>
       </div>
@@ -34,7 +35,8 @@ function Footer() {
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-[#05060a] text-white">
+      <InteractiveBackground />
       <Navbar />
       <Hero />
 
